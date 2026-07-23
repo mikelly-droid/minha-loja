@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Loja de crochê</title>
+   <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <!-- Example Code Start--> 
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+ <div class="container-fluid px-2">
+    <a class="navbar-brand" href="index.html">
+      <img src="imagens/logo.jpg"
+           alt="Logo"
+           width="50"
+           height="50"
+           class="d-inline-block align-text-top">
+      Magia&Linha
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Início</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="catalogo.html">Catálogo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sobre.html">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="depoimentos.html">Avaliações</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="conta.html">Contato</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tutoriais.html">Tutoriais</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <!-- Example Code End -->
+   <main class="container py-4 flex-grow-1 conteudo-principal">
+  
+  <div class="text-center mb-5">
+    <h1 class="titulo-catalogo mb-3">Encomendas Personalizadas</h1>
+    <p class="subtitulo-catalogo">
+      Cada peça da <strong>Magia&Linha</strong> é feita sob medida.
+      Preencha as informações abaixo para que eu possa entender sua ideia,
+      organizar o frete e entrar em contato pelo WhatsApp ou Instagram.
+    </p>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+
+      <form class="p-4 bg-white rounded-4 shadow-sm">
+
+        <!-- Nome -->
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
+          <label for="nome">Nome completo</label>
+        </div>
+
+        <!-- WhatsApp -->
+        <div class="form-floating mb-3">
+          <input type="tel" class="form-control" id="whatsapp" placeholder="(83) 99999-9999" required>
+          <label for="whatsapp">WhatsApp para contato</label>
+        </div>
+
+        <!-- Instagram -->
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="instagram" placeholder="@seuinstagram">
+          <label for="instagram">Instagram (opcional)</label>
+        </div>
+
+        <!-- Tipo da peça -->
+        <div class="form-floating mb-3">
+          <select class="form-select" id="tipo" required>
+            <option selected disabled value="">Escolha uma opção</option>
+            <option>Amigurumi</option>
+            <option>Bolsa</option>
+            <option>Roupa em crochê</option>
+            <option>Decoração</option>
+            <option>Outra peça</option>
+          </select>
+          <label for="tipo">Tipo da peça</label>
+        </div>
+
+        <!-- Modelo desejado -->
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="modelo" placeholder="Ex: Snoopy com laço azul" required>
+          <label for="modelo">Modelo desejado</label>
+        </div>
+
+        <!-- Cores e tamanho -->
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="cores" placeholder="Branco, preto, rosa...">
+              <label for="cores">Cores desejadas</label>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <div class="form-floating">
+              <select class="form-select" id="tamanho">
+                <option selected disabled value="">Selecione</option>
+                <option>Pequeno</option>
+                <option>Médio</option>
+                <option>Grande</option>
+                <option>Sob medida</option>
+              </select>
+              <label for="tamanho">Tamanho</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Prazo -->
+        <div class="form-floating mb-3">
+          <input type="date" class="form-control" id="prazo">
+          <label for="prazo">Prazo desejado</label>
+        </div>
+
+        <!-- Frete -->
+        <div class="row">
+          <div class="col-md-7 mb-3">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="cidade" placeholder="Sua cidade" required>
+              <label for="cidade">Cidade / Estado</label>
+            </div>
+          </div>
+
+          <div class="col-md-5 mb-3">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="cep" placeholder="00000-000" required>
+              <label for="cep">CEP para o frete</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Observações -->
+        <div class="form-floating mb-4">
+          <textarea class="form-control" id="observacoes"
+                    style="height: 130px"
+                    placeholder="Descreva sua ideia"></textarea>
+          <label for="observacoes">Observações e referências</label>
+        </div>
+        <div class="alert alert-warning rounded-3 mb-4" role="alert">
+          <strong>Importante:</strong> As peças são produzidas artesanalmente e podem
+          ter pequenas variações de tamanho e cor. Após o envio do formulário,
+          o atendimento continuará pelo WhatsApp ou Instagram para confirmar detalhes,
+          orçamento e frete.
+        </div>
+
+        <!-- Botões -->
+        <div class="d-grid gap-3">
+          <button type="submit" class="btn btn-danger btn-lg">
+            Enviar pedido de encomenda
+          </button>
+
+          <div class="d-flex flex-column flex-md-row justify-content-center gap-2">
+            <a href="https://wa.me/558340028922"
+               target="_blank"
+               class="btn btn-success">
+              Falar no WhatsApp
+            </a>
+            <a href="https://www.instagram.com/magiaelinha"
+               target="_blank"
+               class="btn btn-outline-dark">
+              Instagram da Loja
+                <a href="https://www.instagram.com/mikelly.swan?igsh=MTRlZXRpdjJtNXNjcg=="
+               target="_blank"
+               class="btn btn-outline-dark">
+              Instagram Pessoal
+            </a>
+            </a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+<footer class="footer-loja mt-5">
+  <div class="container py-3">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start gap-2">
+      <div>
+        <strong>🧶 Magia&Linha</strong>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.instagram.com/magiaelinha?igsh=MTJzcXY2NTFjZHQ0ag==" target="_blank">Instagram</a>
+        <span>•</span>
+        <a href="https://wa.me/40028922" target="_blank">WhatsApp</a>
+      </div>
+      <div class="footer-copy">
+        © 2026 Magia&Linha
+      </div>
+    </div>
+  </div>
+</footer>
+    </div>
+  </div>
+</footer>
+  </body>
+</html>

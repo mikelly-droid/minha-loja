@@ -1,0 +1,161 @@
+.navbar{
+    background-color:#461919 !important;
+}
+
+.navbar-brand{
+    font-size:35px;
+    font-family:Garamond, serif;
+    font-weight:bold;
+    color:#ebc899 !important;
+}
+
+.nav-link{
+    color:#f4bca0 !important;
+    margin-left:15px;
+}
+
+.nav-link:hover{
+    color:white !important;
+}
+.btn-catalogo{
+    background-color:#631d1d;
+    border-color:#5e1818;
+    color:#f4ecb3;
+    font-weight:bold;
+}
+.btn-catalogo:hover{
+    background-color:#631d1d;
+    border-color:#631d1d;
+}
+.btn-catalogo:hover{
+    background:#8c3838;
+    color:white;
+}
+.btn-catalogo:active{
+    background:#4d1212 !important;
+    color:white !important;
+}
+main{
+    margin-top:80px !important;
+}
+.navbar{
+    background:#4a1212 !important;
+    padding:15px;
+
+}
+.nav-link{
+    color:#f8d39c !important;
+    font-size:15px;
+    margin-left:16px;
+}
+.nav-link:hover{
+    color:rgba(168, 28, 53, 0.702) !important;
+}
+h1{
+    font-size: 30px;
+    font-family: Georgia, serif;
+    color: #6b1d1d;
+    font-weight: bold;
+    margin-top: 40px;
+}
+main p{
+    font-size: 20px;
+    font-family: Garamond, serif;
+    color: #5a3a2d;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+}
+body{
+    background-image: url("../imagens/fundo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.navbar-brand{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navbar-brand img{
+    width:55px;
+    height:55px;
+    border-radius:60%;
+
+}
+.footer-loja{
+    background:#4a1212;
+    border-top:2px solid #d8b06a;
+}
+
+.footer-loja .container{
+    padding-top:12px !important;
+    padding-bottom:12px !important;
+}
+
+.footer-links a{
+    color:#f7d6a3;
+    text-decoration:none;
+    margin:0 6px;
+    font-size:0.95rem;
+}
+
+.footer-links a:hover{
+    color:white;
+}
+
+.footer-copy{
+    color:#d8c2a5;
+    font-size:0.9rem;
+}
+.footer-loja strong{
+    color:#c3ad8c;
+}
+.conteudo-principal{
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.catalogo-main{
+    margin-top: -40px;
+}
+
+.titulo-catalogo{
+    margin-top: -60px;
+    padding-top: -80px;
+}
+/* ===== TUTORIAIS ===== */
+
+.titulo-tutoriais{
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #5b0b12;
+}
+
+.subtitulo-tutoriais{
+  color: #7a5a44;
+  font-size: 1.1rem;
+}
+
+.tutorial-card{
+  background: rgba(255,255,255,0.92);
+  border-radius: 18px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.tutorial-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0,0,0,.12);
+}
+
+.tutorial-card .card-title{
+  color: #5b0b12;
+  font-family: 'Playfair Display', serif;
+}
+
+.tutorial-card .card-text{
+  color: #5e4636;
+  line-height: 1.7;
+}
