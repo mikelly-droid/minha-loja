@@ -77,34 +77,28 @@ body{
     font-size: 2rem;
     font-weight: bold;
 }
-
 .navbar-brand img{
     width:55px;
     height:55px;
     border-radius:60%;
-
 }
 .footer-loja{
     background:#4a1212;
     border-top:2px solid #d8b06a;
 }
-
 .footer-loja .container{
     padding-top:12px !important;
     padding-bottom:12px !important;
 }
-
 .footer-links a{
     color:#f7d6a3;
     text-decoration:none;
     margin:0 6px;
     font-size:0.95rem;
 }
-
 .footer-links a:hover{
     color:white;
 }
-
 .footer-copy{
     color:#d8c2a5;
     font-size:0.9rem;
@@ -120,42 +114,45 @@ body{
 .catalogo-main{
     margin-top: -40px;
 }
-
 .titulo-catalogo{
     margin-top: -60px;
     padding-top: -80px;
 }
-/* ===== TUTORIAIS ===== */
-
+/* TUTORIAIS  */
 .titulo-tutoriais{
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
   font-weight: 700;
   color: #5b0b12;
 }
-
 .subtitulo-tutoriais{
   color: #7a5a44;
   font-size: 1.1rem;
 }
-
 .tutorial-card{
   background: rgba(255,255,255,0.92);
   border-radius: 18px;
   transition: transform .2s ease, box-shadow .2s ease;
 }
-
 .tutorial-card:hover{
   transform: translateY(-4px);
   box-shadow: 0 12px 28px rgba(0,0,0,.12);
 }
-
 .tutorial-card .card-title{
   color: #5b0b12;
   font-family: 'Playfair Display', serif;
 }
-
 .tutorial-card .card-text{
   color: #5e4636;
   line-height: 1.7;
+}
+.localizacao {
+    color: rgb(253, 222, 160);
+    margin: 0;
+}
+@media (max-width: 576px) {
+    .card-img-top {
+        height: 350px !important;
+        object-fit: cover !important;
+    }
 }
